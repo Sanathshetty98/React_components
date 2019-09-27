@@ -1,7 +1,13 @@
-import React from 'react';
+import React,{ useEffect } from 'react';
 import Classes from './Cockpit.module.css';
 
-const cockpit = (props) =>{
+const Cockpit = (props) =>{
+
+    useEffect( () =>
+      {
+        console.log(' [Cockpit.js] UseEffect()');
+      }
+    );
     let str ='This is working!!!';
     let btnClass='';
     if(props.showpersons){
@@ -17,11 +23,11 @@ const cockpit = (props) =>{
       classes.push(Classes.bold);
     }
     if(props.persons.length<1){
-      str=' All the ELements are Deleted!!!';
+      str=' All the Elements are Deleted!!!';
     }
     return(
     <div className = {Classes.Cockpit} >
-    <h1> Hi, I'm a React App</h1>
+    <h1> {props.title}</h1>
     <p className={classes.join(' ')}> {str}</p>
     <button 
     className = {btnClass}
@@ -31,4 +37,4 @@ const cockpit = (props) =>{
 };
 
 
-export default cockpit;
+export default Cockpit;
