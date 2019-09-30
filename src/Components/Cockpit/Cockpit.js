@@ -6,7 +6,10 @@ const Cockpit = (props) =>{
     useEffect( () =>
       {
         console.log(' [Cockpit.js] UseEffect()');
-      }
+        setTimeout( () => {
+          alert('data saved to cloud');
+        },1000);
+      },[]
     );
     let str ='This is working!!!';
     let btnClass='';
