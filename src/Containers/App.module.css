@@ -1,6 +1,10 @@
 .App {
-  text-align: center;
-  /*background-image: url('C:\Users\sanaths\Documents\GitHub\React_components\src\assets\images4.jpg');
+  /*text-align: center;
+  background: url(C:\Users\sanaths\Documents\GitHub\React_components\src\assets\images4.jpg) no-repeat center center fixed;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  background-image: url('C:\Users\sanaths\Documents\GitHub\React_components\src\assets\images4.jpg');
   background-size:contain;
   background-position:top;
   background: cover;

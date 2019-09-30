@@ -28,9 +28,12 @@ const Cockpit = (props) =>{
     if(props.persons.length<1){
       str=' All the Elements are Deleted!!!';
     }
+    const style = {
+      color: 'white'
+    };
     return(
     <div className = {Classes.Cockpit} >
-    <h1> {props.title}</h1>
+    <h1 style = {style}> {props.title}</h1>
     <p className={classes.join(' ')}> {str}</p>
     <button 
     className = {btnClass}
